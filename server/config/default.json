@@ -1,0 +1,11 @@
+{
+    "port": 5000,
+    "DB_user": "admin1",
+    "DB_name": "Take me home 1",
+    "DB_user_password": "Nobiti651277",
+    "DB_host":  "DESKTOP-1T0P4IT",
+    "DB_instanceName": "ANDREY",
+    "DB_port": "1433",
+
+    "jwtSecret": "Take me home jwt here is something i can`t come up with"
+}

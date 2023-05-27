@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* header {
+  width: 100%;
+  height: 66px;
+  display: grid;
+  align-items: center;
+  top: 0;
+} */
+
+.emptyField {
+  color: red;
+}
+
+.main-frame {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #F87D25 0%, #EDD210 99.98%, rgba(232, 196, 6, 0) 99.99%, rgba(248, 186, 94, 0.57) 100%);
+}
+
+.white-corner{
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  right: 0;
+  bottom: 0;
+  /* left: 287px; */
+  /* top: 0px; */
+  background: #FAF5F5;
+  box-shadow: 0px 4px 10px 40px rgb(251 247 247 / 40%);
+  border-radius: 1e6px 0px 0px 0px;
+}
+
+.animals{
+  position: absolute;
+  width: 780px;
+  height: 720px;
+  bottom: 0;
+  right: 0;
+  background: url(../public/svg/main-animals.svg);
+}
+
+.parrot{
+  /* Flying-Parrot-Transparent-PNG 1 */
+
+position: absolute;
+width: 516px;
+height: 405px;
+left: 75px;
+top: -135px;
+
+background: url(../public/svg/parrot.svg);
+
+}
+
+.dog{
+  /* Flying-Parrot-Transparent-PNG 1 */
+  position: absolute;
+  width: 480px;
+  height: 600px;
+  right: 0;
+  background: url(../public/svg/dog.svg);
+  mix-blend-mode: normal;
+}
+
+.cat {
+  position: absolute;
+  width: 303px;
+  height: 331px;
+  bottom: 0;
+  left: 180px;
+  background: url(../public/svg/cat.svg);
+}
+
+.logo-text {
+  z-index: 100;
+  /* width: 244px;
+  height: 33px; */
+  justify-self: start;
+  padding-left: 88px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.logo-text > a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.entrance-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  justify-self: end;
+  /* width: 111px;
+  height: 33px; */
+  padding-right: 88px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.main-frame-txt{
+  display: flex;
+  justify-content: center; 
+  align-content: center;
+  flex-direction: column;
+  align-self: baseline;
+  justify-self: auto;
+  flex-wrap: wrap;
+  width: 470px;
+  height: 550px;
+}
+
+.p-about-txt{
+  width: 309px;
+height: 194px;
+left: 76px;
+top: 68px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* or 160% */
+
+
+color: #FDFCFC;
+
+}
+
+.h-about-txt{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+/* text-align: center; */
+color: #000000;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+}
+
+.entrance-div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 615px;
+  height: 600px;
+  align-self: center;
+  justify-self: center;
+  background: rgba(255, 251, 251, 0.45);
+  border-radius: 20px;
+  align-content: center;
+}
+
+.register-div {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    width: 615px;
+    height: 750px;
+    align-self: center;
+    justify-self: center;
+    background: rgba(255, 251, 251, 0.45);
+    border-radius: 20px;
+    align-content: center;
+}
+
+.entrance-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.h-center{
+  text-align: center;
+}
+
+.inp {
+  order: 2;
+  box-sizing: border-box;
+  height: 40px;
+  /* left: 487px;
+  top: 294px; */
+  background: #FFFFFF;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-indent: 10px;
+  /* border: 3px solid #04C0FC; */
+  border-radius: 10px;
+}
+
+.inp:focus{
+  outline: none;
+  border: 3px solid #04C0FC;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 10px;
+}
+
+
+
+.lb1 {
+  order:1;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* color: #000000; */
+}
+
+.submitbtn{
+  background: #E29E1A;
+  border-radius: 35px;
+  width: 300px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.registr-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E29E1A;
+  border-radius: 35px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #000000;
+  align-self: center;
+}
+
+.txt-or{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0E0D0D;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.forgetpass-link{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+align-self: center;
+margin-top: 25px;
+color: #00A3FE;
+border: none;
+background: none;
+cursor: pointer;
+}
+
+.inp-file{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
+.inp-file + label{
+  order: 2;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  flex-wrap: wrap;
+  border: none;
+  align-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  display: flex;
+  font-weight: 400;
+  height: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  text-indent: 10px;
+  border-radius: 10px;
+}
+
+.inp-file:focus + label, .inp-file + label:hover{
+  outline: none;
+  border: 3px solid #04C0FC;
+}
+
+.inp:hover {
+  outline: none;
+  border: 3px solid #04C0FC;
+}
+
+.inp-file + label{
+  cursor: pointer;
+}
+
+.display-none{
+  display: none;
+}
+
+.photo {
+  width: 132px;
+  height: 132px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: white;
+}
+
+.display-flex-center{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+.uploadPreview{
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.pass {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  width: 420px;
+}
+
+.paswidth {
+  width: 400px;
+}
+
+.password-control {
+  border: none;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  left: -32px;
+  align-self: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../public/svg/eye.svg);
+  background-size: 100% 100%;
+  order: 3;
+  }
+  .password-control.view {
+      background-image: url(../public/svg/closeeye.svg);
+  }
+
+  .error {
+    width: 250px;
+    text-align: center;
+    color: red;
+    padding: 10px;
+    border: solid red 2px;
+    font-size: 16px;
+  }
+
+  .dialog-code {
+    width: 420px;
+    background: gainsboro;
+    border-radius: 10px;
+    border: none;
+  }
+  
+
+  
+  .dialog-code::backdrop{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .close {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    opacity: 0.7;
+  }
+
+.close:hover{
+  opacity: 1;
+  scale: 1.2;
+}
+
+.timer{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.send-again-btn {
+
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  
+}
+
+
+.user {
+  order: 2;
+  margin-left: 5px;
+  width: 25 px;
+  height: 25px;
+}

@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "admin1",
+    "password": "Nobiti651277",
+    "database": "Take me home 1",
+    "host": "DESKTOP-1T0P4IT",
+    "port": "1433",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "encrypt": true, 
+        "instanceName":"ANDREY",
+        "trustServerCertificate": true 
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  }
+}
